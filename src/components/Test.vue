@@ -1,0 +1,11 @@
+<script>
+  export default {
+    name: 'Test',
+  }
+</script>
+
+<template>
+  <div>
+    <h2>Im test</h2>
+  </div>
+</template>
