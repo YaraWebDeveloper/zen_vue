@@ -1,14 +1,18 @@
 <script>
+import {mapState} from 'vuex';
+
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
+  computed: {
+    ...mapState({
+      msg: state => state.clients.msg
+    })
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 h3 {
   margin: 40px 0 0;
 }

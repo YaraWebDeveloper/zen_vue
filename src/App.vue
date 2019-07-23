@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-
-    <router-link to="/test"></router-link>
+    <new-header></new-header>
     <router-view></router-view>
   </div>
 </template>
@@ -11,9 +9,12 @@
 
 export default {
   name: 'app',
-  data: ()=> ({
-    msg: 'Welcome Zen :3'
-  })
+  components: {
+    'new-header': () =>
+      import(
+        /* webpackChunkName: "Header" */ "./components/template/Header"
+      )
+  }
 }
 </script>
 

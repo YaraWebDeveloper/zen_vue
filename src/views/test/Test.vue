@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="section">
     <h2>Im test</h2>
   </div>
 </template>
